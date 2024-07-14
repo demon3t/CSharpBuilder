@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpBuilder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ee1184db726bdaff00d9fdecf7fffb52b4b812d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2988111c41fbaeafade5c8c18f0fcd415ce60bef")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpBuilder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpBuilder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
