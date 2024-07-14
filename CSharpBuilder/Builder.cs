@@ -6,7 +6,7 @@ namespace CSharpBuilder
     /// <summary>
     /// Строитель кода.
     /// </summary>
-    public class Builder : BaseElementCollection //#doto Расширить BaseElementCollection. Добавить метод добаление элементов. Изменить доступность дочених элементов. 
+    public class Builder : BaseElementCollection
     {
         #region Конструкторы
 
@@ -24,7 +24,7 @@ namespace CSharpBuilder
         /// Коструктор c параметрами.
         /// </summary>
         /// <param name="namespace"> Пространство имён. </param>
-        public Builder(string @namespace) : this() //#doto Добавить пространство имён как класс, наследник BaseElement. 
+        public Builder(string @namespace) : this()
         {
             _hasNamespase = true;
         }
