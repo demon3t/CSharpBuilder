@@ -5,7 +5,7 @@ namespace CSharpBuilder.Core.Base
     /// <summary>
     /// Базовая реализация элемента.
     /// </summary>
-    public abstract class BaseElementCollection : IElementCollection
+    public abstract class BaseElementCollection<TChild> : IElementCollection<TChild> where TChild : IElement 
     {
         #region Конструкторы
 
@@ -15,7 +15,7 @@ namespace CSharpBuilder.Core.Base
         public BaseElementCollection()
         {
             Id = Guid.NewGuid();
-            Elements = new List<IElement>();
+            Elements = new List<TChild>();
         }
 
         #endregion Конструкторы
@@ -30,7 +30,7 @@ namespace CSharpBuilder.Core.Base
         /// <summary>
         /// Коллекция элементов.
         /// </summary>
-        public ICollection<IElement> Elements { get; set; }
+        public ICollection<TChild> Elements { get; set; }
 
         /// <summary>
         /// Контент
@@ -60,7 +60,7 @@ namespace CSharpBuilder.Core.Base
         /// Добавить элемент в коллекцию.
         /// </summary>
         /// <param name="element"> ДОбавляемый элемент. </param>
-        public virtual void Add(IElement element)
+        public virtual void Add(TChild element)
         {
             if (!Elements.Any(e => element.Id == element.Id))
             {

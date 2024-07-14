@@ -1,4 +1,5 @@
 using CSharpBuilder.Core.Base;
+using CSharpBuilder.Core.Interfaces;
 using System.Text.RegularExpressions;
 
 namespace CSharpBuilder.Models
@@ -6,7 +7,7 @@ namespace CSharpBuilder.Models
     /// <summary>
     /// Модель пространства имён.
     /// </summary>
-    public partial class Namespace : BaseElementCollection
+    public partial class Namespace : BaseElementCollection<INamespaceChild>
     {
         #region Конструкторы
 
