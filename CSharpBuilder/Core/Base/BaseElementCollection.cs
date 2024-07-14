@@ -30,7 +30,7 @@ namespace CSharpBuilder.Core.Base
         /// <summary>
         /// Коллекция элементов.
         /// </summary>
-        public IEnumerable<IElement> Elements { get; set; }
+        public ICollection<IElement> Elements { get; set; }
 
         /// <summary>
         /// Контент
@@ -53,5 +53,21 @@ namespace CSharpBuilder.Core.Base
         }
 
         #endregion Свойства
+
+        #region Методы : Public
+
+        /// <summary>
+        /// Добавить элемент в коллекцию.
+        /// </summary>
+        /// <param name="element"> ДОбавляемый элемент. </param>
+        public virtual void Add(IElement element)
+        {
+            if (!Elements.Any(e => element.Id == element.Id))
+            {
+                Elements.Add(element);
+            }
+        }
+
+        #endregion Методы : Public
     }
 }
