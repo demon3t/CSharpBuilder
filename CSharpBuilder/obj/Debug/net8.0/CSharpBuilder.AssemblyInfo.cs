@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpBuilder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2988111c41fbaeafade5c8c18f0fcd415ce60bef")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d13769dd85ada196994ac9012bd98627515b4af7")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpBuilder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpBuilder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
