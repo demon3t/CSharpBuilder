@@ -35,7 +35,7 @@ namespace CSharpBuilder.Core.Base
         /// <summary>
         /// Контент
         /// </summary>
-        public IEnumerable<string> Content { 
+        public virtual IEnumerable<string> Content { 
             get
             {
                 foreach (var element in Elements)
